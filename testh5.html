@@ -7,6 +7,7 @@
 
 <div onclick="openDetailWin();">open</div>
 <div onclick="alert(222)">alert</div>
+<div onclick="postMessage();">post</div>
 <script type="text/javascript">
 	function openDetailWin(){
 		console.log('open');
@@ -15,6 +16,11 @@
 		console.log('end');
 		return;
 		
+	}
+	
+	function postMessage(){
+		console.log('postMessage');
+		window.top.postMessage('hello','file://storage');
 	}
 </script>
 </body>
