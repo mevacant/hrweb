@@ -1,0 +1,23 @@
+<html>
+<head>
+	
+</head>
+<body>
+
+
+<div onclick="openDetailWin();">open</div>
+<div onclick="alert(222)">alert</div>
+<script type="text/javascript">
+	function openDetailWin(){
+		console.log('open');
+		//alert(1);
+		parent.openDetailWin();
+		console.log('end');
+		return;
+		
+	}
+</script>
+</body>
+
+
+</html>
